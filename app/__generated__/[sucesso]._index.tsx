@@ -10,7 +10,7 @@ import { Box as Box, Heading as Heading, Span as Span, Text as Text, HtmlEmbed a
 
       export const projectId = "ce921029-6156-4db1-a716-d26d0eb13e14";
 
-      export const lastPublished = "2026-01-28T17:00:41.406Z";
+      export const lastPublished = "2026-01-28T17:37:53.668Z";
 
       export const siteName = "OMA Studios";
 

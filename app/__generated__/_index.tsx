@@ -11,7 +11,7 @@ import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as Dial
 
       export const projectId = "ce921029-6156-4db1-a716-d26d0eb13e14";
 
-      export const lastPublished = "2026-01-28T17:00:41.406Z";
+      export const lastPublished = "2026-01-28T17:37:53.668Z";
 
       export const siteName = "OMA Studios";
 
@@ -58,11 +58,11 @@ code={"<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src=\"https://w
 className={`w-html-embed`} />
 <Box
 id={"inicio"}
-className={`w-box c18pbl6 cnyb1m6 c1ai28iq c1vramtg c1g7ud5l co2u9qe cu5bf3n c18zq91h c1auzgzp c1gn97o1 cd4gmss cmtnauy c68yfzg c1izvqxl c337ec1`}>
+className={`w-box c18pbl6 cnyb1m6 c1ai28iq c1vramtg c1g7ud5l co2u9qe cu5bf3n c18zq91h c1auzgzp c1gn97o1 cd4gmss cmtnauy c68yfzg c1izvqxl cmy8j3q`}>
 <Box
 className={`w-box c18pbl6 c1esu2y0 c1rgix91 c8rz2k4 cxbyvb5 c569vxc cd9byem cutxx5e cloq0ka c1des751 c1gkb964 c8bx97p co2u9qe cu5bf3n c18zq91h cp2qbj3 c6pbnj9`} />
 <Box
-className={`w-box c18pbl6 cl2takc cpq74bm c1wutpue chp3cnt coylvo7 c1km79oc cmt1gb9 c1gn97o1 cmtnauy c68yfzg c1auzgzp cutxx5e cd4gmss c1800mp1 cq8csui c337ec1 c1ieatrl c11f2jte c1qqfk8y c1t6wo7c cj65elg c1cvffav cc8wanz cu5zju4`}>
+className={`w-box c18pbl6 cl2takc cpq74bm c1wutpue chp3cnt coylvo7 c1km79oc cmt1gb9 c1gn97o1 cmtnauy c68yfzg c1auzgzp cutxx5e cd4gmss c1800mp1 cq8csui c337ec1 c1ieatrl c11f2jte c1qqfk8y c1t6wo7c cj65elg ce7x9i0 cc8wanz cu5zju4`}>
 <Box
 className={`w-box c68yfzg cnyb1m6 csvyxa cj5czu7 c1km79oc cmt1gb9 c1lgqyop cdl26f6 c1gn97o1 c173t3g6 c1w7tvbs c1mqtlsr cmy8j3q cu0oho2 c9bbv29 cyarf17 cxrppyc c1ybdp03 c3h6gnf`}>
 <Heading
@@ -125,7 +125,7 @@ className={`w-element c1qsugqr c1800mp1 c18u3yxh c1jlsicg c1f1zjsr`}>
 <Box
 className={`w-box cq8csui cdl26f6 cldtf5c c1ybdp03`}>
 <Box
-className={`w-box cx93gdu cl2takc cpq74bm c1wutpue c1gn97o1 cmtnauy c68yfzg c1auzgzp cutxx5e c173t3g6 c1800mp1 cq8csui csvyxa cj5czu7 c1q2y2ps c1mbwxwj corzfld c11wpw56 c1spczlv cbybyoe ctt2gjm c337ec1 csxuqo cldtf5c c11f2jte cj65elg c1cvffav cu5zju4`}>
+className={`w-box cx93gdu cl2takc cpq74bm c1wutpue c1gn97o1 cmtnauy c68yfzg c1auzgzp cutxx5e c173t3g6 c1800mp1 cq8csui csvyxa cj5czu7 c1q2y2ps c1mbwxwj corzfld c11wpw56 c1spczlv cbybyoe cq5wx0q ctt2gjm c337ec1 csxuqo cldtf5c c11f2jte cj65elg c1cvffav cx1hvfb cu5zju4`}>
 <Box
 className={`w-box c1gn97o1 c173t3g6 cmtnauy c3in6f7 c1s449hu c68yfzg`}>
 <Heading
@@ -191,6 +191,15 @@ className={`w-button c1n2fdan c108d0jy c1hbihsy c11ucqog c1nymgjn c13opkia cxhd8
 code={"<script>\n  document\n    .getElementById(\"contact-form-1\")\n    .addEventListener(\"submit\", function (e) {\n      e.preventDefault() // Prevent default form submission\n\n      // Get form data\n      const form = e.target\n      const formData = new FormData(form)\n\n      // Create object with form data and custom values\n      const dataToSend = {\n        // Spread form data into object\n        ...Object.fromEntries(formData),\n        // Add custom values\n        Origem: \"OMA Studios\"\n      }\n\n      // Make POST request\n      fetch(\"https://n8n.myrnaimoveis.com/webhook/entrar-em-contato\", {\n        method: \"POST\",\n        headers: {\n          \"Content-Type\": \"application/json\",\n        },\n        body: JSON.stringify({ ...dataToSend }),\n      })\n        .then((response) => {\n          if (!response.ok) {\n            throw new Error(\"Network response was not ok\")\n          }\n          return response.json()\n        })\n        .then((data) => {\n          console.log(\"Success:\", data)\n          // Handle success (e.g., show success message)\n          window.location.href = \"/sucesso\"\n        })\n        .catch((error) => {\n          console.error(\"Error:\", error)\n          // Handle error (e.g., show error message)\n          window.location.href = \"/sucesso\"\n        })\n    })\n</script>"}
 className={`w-html-embed`} />
 </RemixForm>
+<p
+className={`w-element cdwmer7 cspmm3c c1aomvkd c149l5xv cpy6ziw`}>
+{"Ao se inscrever você concorda a "}
+<Link_1
+href={"/privacidade"}
+className={`w-element c108d0jy cb68zzq c1g4zaiv cg2lxzj c1gubvuw c6mgen cgb0t6 cybq7je c1sms0na`}>
+{"Política de Privacidade"}
+</Link_1>
+</p>
 </Box>
 </Box>
 </Box>
@@ -546,6 +555,15 @@ className={`w-button c1n2fdan c108d0jy c1hbihsy c11ucqog c1nymgjn c13opkia cxhd8
 code={"<script>\n  document\n    .getElementById(\"contact-form-2\")\n    .addEventListener(\"submit\", function (e) {\n      e.preventDefault() // Prevent default form submission\n\n      // Get form data\n      const form = e.target\n      const formData = new FormData(form)\n\n      // Create object with form data and custom values\n      const dataToSend = {\n        // Spread form data into object\n        ...Object.fromEntries(formData),\n        // Add custom values\n        Origem: \"OMA Studios\"\n      }\n\n      // Make POST request\n      fetch(\"https://n8n.myrnaimoveis.com/webhook/entrar-em-contato\", {\n        method: \"POST\",\n        headers: {\n          \"Content-Type\": \"application/json\",\n        },\n        body: JSON.stringify({ ...dataToSend }),\n      })\n        .then((response) => {\n          if (!response.ok) {\n            throw new Error(\"Network response was not ok\")\n          }\n          return response.json()\n        })\n        .then((data) => {\n          console.log(\"Success:\", data)\n          // Handle success (e.g., show success message)\n          window.location.href = \"/sucesso\"\n        })\n        .catch((error) => {\n          console.error(\"Error:\", error)\n          // Handle error (e.g., show error message)\n          window.location.href = \"/sucesso\"\n        })\n    })\n</script>"}
 className={`w-html-embed`} />
 </RemixForm>
+<p
+className={`w-element cdwmer7 cspmm3c c1aomvkd c149l5xv cpy6ziw`}>
+{"Ao se inscrever você concorda a "}
+<Link_1
+href={"/privacidade"}
+className={`w-element c108d0jy cb68zzq c1g4zaiv cg2lxzj c1gubvuw c6mgen cgb0t6 cybq7je c1sms0na`}>
+{"Política de Privacidade"}
+</Link_1>
+</p>
 </Box>
 </Box>
 <Box
@@ -637,18 +655,27 @@ href={"#inicio"}
 className={`w-link c108d0jy cd23qux cq8csui c1lmclx2 cp4gdud cx93gdu c1tsj3cd`}>
 <Heading
 data-ws-tag="h1"
-className={`w-heading c1aomvkd c1t331jd c3gc61g c1k2m0v5 cpy6ziw c149l5xv cjm5od1 c12t3o2l c1s0zy0e crlvzh9 ccestzk`}>
+className={`w-heading c1aomvkd c1t331jd c3gc61g c1k2m0v5 cpy6ziw c149l5xv cjm5od1 c12t3o2l c1s0zy0e crlvzh9 ccestzk cyjf4dz`}>
 <b
 className={`w-element c1t331jd`}>
 {"OMA Studios"}
 </b>
 </Heading>
-<Image
-src={"/assets/Logomark_Light_h3vuwfDitbjjyxAu0pTq2.svg"}
-width={36}
-height={34}
-alt={""}
-className={`w-image cq5gtyb cx93gdu c1vsi70n c774cxu c1fzbwwp cuw9cwu c1541zyy`} />
+<Heading
+data-ws-tag="h1"
+className={`w-heading c1aomvkd c1t331jd c3gc61g c1k2m0v5 cpy6ziw c149l5xv cjm5od1 c12t3o2l c1s0zy0e crlvzh9 c1vsi70n ccestzk cuw9cwu c1jxfmtr c17h7gv3 ctu8sxq cnslh23 c1orwnef c53ut2y`}>
+<b
+className={`w-element c1t331jd c18ghdmq c1842c74`}>
+{"OMA"}
+</b>
+{""}
+<br />
+{""}
+<b
+className={`w-element c1myo4eu`}>
+{"Studios"}
+</b>
+</Heading>
 </Link>
 <Box
 className={`w-box c1gn97o1 cd4gmss c6vhksc c1s449hu c3in6f7 c1rgix91 c1r11ioj cn6moax c1q4zydl c1opxtli c1jhq5vf c15buysa c1n6m90e cgo44qf c13nm82y cv83gzq`}>

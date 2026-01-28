@@ -20,6 +20,9 @@
   div.w-element {
     box-sizing: border-box
   }
+  p.w-element {
+    box-sizing: border-box
+  }
   span.w-element {
     box-sizing: border-box
   }
@@ -935,9 +938,6 @@
   .c1d44wy0 {
     background-image: url("/assets/oma-studio-perspectiva_ojMG0cBpEL5xCfWtPegUI.webp")
   }
-  .cq5gtyb {
-    height: 24px
-  }
   .cvn9a9v {
     row-gap: 6px
   }
@@ -1024,6 +1024,24 @@
   }
   .c183glwl {
     background-color: limegreen
+  }
+  .cdwmer7 {
+    color: rgb(124 124 124 / 1)
+  }
+  .cspmm3c {
+    font-size: 14px
+  }
+  .c6mgen {
+    text-decoration-style: solid
+  }
+  .cgb0t6 {
+    text-decoration-color: unset
+  }
+  .cybq7je {
+    font-weight: 700
+  }
+  .c1sms0na {
+    color: unset
   }
 }
 @media all and (max-width: 1439px) {
@@ -1166,6 +1184,9 @@
   .c6pbnj9 {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.25) 100%)
   }
+  .ce7x9i0 {
+    max-width: fit-content
+  }
   .cc8wanz {
     flex-direction: column
   }
@@ -1204,6 +1225,9 @@
   }
   .c1aop6gp {
     padding-top: 24px
+  }
+  .cx1hvfb {
+    margin-top: 0px
   }
   .c1jhq5vf {
     top: auto
@@ -1327,11 +1351,17 @@
   .csxuqo {
     max-width: 100%
   }
+  .cyjf4dz {
+    display: none
+  }
   .cuw9cwu {
     display: block
   }
-  .c1541zyy {
-    height: 42px
+  .c17h7gv3 {
+    line-height: 100%
+  }
+  .ctu8sxq {
+    text-align: start
   }
 }
 @media all and (max-width: 479px) {
@@ -1386,7 +1416,16 @@
   .c7g7u7b {
     padding-bottom: 0px
   }
-  .c774cxu {
-    height: 36px
+  .cnslh23 {
+    font-size: 18px
+  }
+  .c1orwnef {
+    line-height: 100%
+  }
+  .c18ghdmq {
+    font-weight: 700
+  }
+  .c1842c74 {
+    font-size: 16px
   }
 }
