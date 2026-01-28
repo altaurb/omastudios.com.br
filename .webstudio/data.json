@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "273edf9e-1d31-4083-bae7-7fc04f96943a",
+    "id": "f8eaa01f-9f3b-46b3-8903-024b5aaed663",
     "projectId": "ce921029-6156-4db1-a716-d26d0eb13e14",
-    "version": 486,
-    "createdAt": "2026-01-28T17:37:53.668+00:00",
-    "updatedAt": "2026-01-28T17:37:53.668+00:00",
+    "version": 526,
+    "createdAt": "2026-01-28T19:09:42.167+00:00",
+    "updatedAt": "2026-01-28T19:09:42.167+00:00",
     "pages": {
       "meta": {
         "siteName": "OMA Studios",
@@ -22544,7 +22544,7 @@
           "instanceId": "A_dFUns9_iP_4j9APiRMK",
           "name": "code",
           "type": "string",
-          "value": "<script>\n  document\n    .getElementById(\"contact-form-2\")\n    .addEventListener(\"submit\", function (e) {\n      e.preventDefault() // Prevent default form submission\n\n      // Get form data\n      const form = e.target\n      const formData = new FormData(form)\n\n      // Create object with form data and custom values\n      const dataToSend = {\n        // Spread form data into object\n        ...Object.fromEntries(formData),\n        // Add custom values\n        Origem: \"OMA Studios\"\n      }\n\n      // Make POST request\n      fetch(\"https://n8n.myrnaimoveis.com/webhook/entrar-em-contato\", {\n        method: \"POST\",\n        headers: {\n          \"Content-Type\": \"application/json\",\n        },\n        body: JSON.stringify({ ...dataToSend }),\n      })\n        .then((response) => {\n          if (!response.ok) {\n            throw new Error(\"Network response was not ok\")\n          }\n          return response.json()\n        })\n        .then((data) => {\n          console.log(\"Success:\", data)\n          // Handle success (e.g., show success message)\n          window.location.href = \"/sucesso\"\n        })\n        .catch((error) => {\n          console.error(\"Error:\", error)\n          // Handle error (e.g., show error message)\n          window.location.href = \"/sucesso\"\n        })\n    })\n</script>"
+          "value": "<script>\n  document\n    .getElementById(\"contact-form-2\")\n    .addEventListener(\"submit\", function (e) {\n      e.preventDefault() // Prevent default form submission\n\n      // Get form data\n      const form = e.target\n      const formData = new FormData(form)\n\n      // Create object with form data and custom values\n      const dataToSend = {\n        // Spread form data into object\n        ...Object.fromEntries(formData),\n        // Add custom values\n        Origem: \"OMA Studios\",\n        WhatsApp: itiDark.getNumber()\n      }\n\n      // Make POST request\n      fetch(\"https://n8n.myrnaimoveis.com/webhook/entrar-em-contato\", {\n        method: \"POST\",\n        headers: {\n          \"Content-Type\": \"application/json\",\n        },\n        body: JSON.stringify({ ...dataToSend }),\n      })\n        .then((response) => {\n          if (!response.ok) {\n            throw new Error(\"Network response was not ok\")\n          }\n          return response.json()\n        })\n        .then((data) => {\n          console.log(\"Success:\", data)\n          // Handle success (e.g., show success message)\n          window.location.href = \"/sucesso\"\n        })\n        .catch((error) => {\n          console.error(\"Error:\", error)\n          // Handle error (e.g., show error message)\n          window.location.href = \"/sucesso\"\n        })\n    })\n</script>"
         }
       ],
       [
@@ -23224,7 +23224,7 @@
           "instanceId": "Ur6iMpZ89H9iEOYd4coGj",
           "name": "code",
           "type": "string",
-          "value": "<script>\n  document\n    .getElementById(\"contact-form-1\")\n    .addEventListener(\"submit\", function (e) {\n      e.preventDefault() // Prevent default form submission\n\n      // Get form data\n      const form = e.target\n      const formData = new FormData(form)\n\n      // Create object with form data and custom values\n      const dataToSend = {\n        // Spread form data into object\n        ...Object.fromEntries(formData),\n        // Add custom values\n        Origem: \"OMA Studios\"\n      }\n\n      // Make POST request\n      fetch(\"https://n8n.myrnaimoveis.com/webhook/entrar-em-contato\", {\n        method: \"POST\",\n        headers: {\n          \"Content-Type\": \"application/json\",\n        },\n        body: JSON.stringify({ ...dataToSend }),\n      })\n        .then((response) => {\n          if (!response.ok) {\n            throw new Error(\"Network response was not ok\")\n          }\n          return response.json()\n        })\n        .then((data) => {\n          console.log(\"Success:\", data)\n          // Handle success (e.g., show success message)\n          window.location.href = \"/sucesso\"\n        })\n        .catch((error) => {\n          console.error(\"Error:\", error)\n          // Handle error (e.g., show error message)\n          window.location.href = \"/sucesso\"\n        })\n    })\n</script>"
+          "value": "<script>\n  document\n    .getElementById(\"contact-form-1\")\n    .addEventListener(\"submit\", function (e) {\n      e.preventDefault() // Prevent default form submission\n\n      // Get form data\n      const form = e.target\n      const formData = new FormData(form)\n\n      // Create object with form data and custom values\n      const dataToSend = {\n        // Spread form data into object\n        ...Object.fromEntries(formData),\n        // Add custom values\n        Origem: \"OMA Studios\",\n        WhatsApp: iti.getNumber()\n      }\n\n      // Make POST request\n      fetch(\"https://n8n.myrnaimoveis.com/webhook/entrar-em-contato\", {\n        method: \"POST\",\n        headers: {\n          \"Content-Type\": \"application/json\",\n        },\n        body: JSON.stringify({ ...dataToSend }),\n      })\n        .then((response) => {\n          if (!response.ok) {\n            throw new Error(\"Network response was not ok\")\n          }\n          return response.json()\n        })\n        .then((data) => {\n          console.log(\"Success:\", data)\n          // Handle success (e.g., show success message)\n          window.location.href = \"/sucesso\"\n        })\n        .catch((error) => {\n          console.error(\"Error:\", error)\n          // Handle error (e.g., show error message)\n          window.location.href = \"/sucesso\"\n        })\n    })\n</script>"
         }
       ],
       [
@@ -23578,36 +23578,6 @@
         }
       ],
       [
-        "jaQC4OON0jdLOhddaPeDe",
-        {
-          "id": "jaQC4OON0jdLOhddaPeDe",
-          "instanceId": "naMdrpZ0QqeqPb7I3ghhT",
-          "name": "code",
-          "type": "string",
-          "value": "<script>\n  const inputDark = document.querySelector(\"#phone-dark\");\n  window.intlTelInput(inputDark, {\n    loadUtils: () => import(\"https://cdn.jsdelivr.net/npm/intl-tel-input@25.15.0/build/js/utils.js\"),\n  });\n  const itiDark = intlTelInput.getInstance(inputDark);\n  itiDark.setCountry('br')\n</script>"
-        }
-      ],
-      [
-        "BS3eRWrxIsd73RwVDnv-F",
-        {
-          "id": "BS3eRWrxIsd73RwVDnv-F",
-          "instanceId": "naMdrpZ0QqeqPb7I3ghhT",
-          "name": "clientOnly",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "CV1la9JgBRYapmyU2vIYI",
-        {
-          "id": "CV1la9JgBRYapmyU2vIYI",
-          "instanceId": "naMdrpZ0QqeqPb7I3ghhT",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
         "BQFU-3WxpYHkn8uLpOpXa",
         {
           "id": "BQFU-3WxpYHkn8uLpOpXa",
@@ -23843,6 +23813,46 @@
           "id": "Vzm1i8IDVzMK78Uvbv6ZF",
           "instanceId": "rjIcwc50AOO-g374hgLg7",
           "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "xMHwoWpothq-26I2hWR6W",
+        {
+          "id": "xMHwoWpothq-26I2hWR6W",
+          "instanceId": "sh5GFOFS2yEvi52rJzQOv",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "jaQC4OON0jdLOhddaPeDe",
+        {
+          "id": "jaQC4OON0jdLOhddaPeDe",
+          "instanceId": "naMdrpZ0QqeqPb7I3ghhT",
+          "name": "code",
+          "type": "string",
+          "value": "<script>\n  const inputDark = document.querySelector(\"#phone-dark\");\n  window.intlTelInput(inputDark, {\n    loadUtils: () => import(\"https://cdn.jsdelivr.net/npm/intl-tel-input@25.15.0/build/js/utils.js\"),\n  });\n  const itiDark = intlTelInput.getInstance(inputDark);\n  itiDark.setCountry('br')\n</script>"
+        }
+      ],
+      [
+        "BS3eRWrxIsd73RwVDnv-F",
+        {
+          "id": "BS3eRWrxIsd73RwVDnv-F",
+          "instanceId": "naMdrpZ0QqeqPb7I3ghhT",
+          "name": "clientOnly",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "CV1la9JgBRYapmyU2vIYI",
+        {
+          "id": "CV1la9JgBRYapmyU2vIYI",
+          "instanceId": "naMdrpZ0QqeqPb7I3ghhT",
+          "name": "executeScriptOnCanvas",
           "type": "boolean",
           "value": true
         }
@@ -27054,15 +27064,6 @@
         }
       ],
       [
-        "naMdrpZ0QqeqPb7I3ghhT",
-        {
-          "type": "instance",
-          "id": "naMdrpZ0QqeqPb7I3ghhT",
-          "component": "HtmlEmbed",
-          "children": []
-        }
-      ],
-      [
         "HcLFAexRbHhkCawmGS_BA",
         {
           "type": "instance",
@@ -27705,6 +27706,15 @@
               "value": "Studios"
             }
           ]
+        }
+      ],
+      [
+        "naMdrpZ0QqeqPb7I3ghhT",
+        {
+          "type": "instance",
+          "id": "naMdrpZ0QqeqPb7I3ghhT",
+          "component": "HtmlEmbed",
+          "children": []
         }
       ]
     ],
