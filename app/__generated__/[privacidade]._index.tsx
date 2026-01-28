@@ -4,7 +4,8 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Body as Body, Box as Box, Heading as Heading, Span as Span, MarkdownEmbed as MarkdownEmbed, HtmlEmbed as HtmlEmbed, Link as Link, Image as Image, Paragraph as Paragraph, RichTextLink as RichTextLink } from "@webstudio-is/sdk-components-react";
+      import { Body as Body, Link as Link, RichTextLink as RichTextLink } from "@webstudio-is/sdk-components-react-router";
+import { Box as Box, Heading as Heading, Span as Span, MarkdownEmbed as MarkdownEmbed, HtmlEmbed as HtmlEmbed, Image as Image, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
 
 
       export const projectId = "ce921029-6156-4db1-a716-d26d0eb13e14";

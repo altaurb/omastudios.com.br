@@ -3,9 +3,10 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "vite build",
-    "dev": "vite dev",
-    "typecheck": "tsc"
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "typecheck": "tsc",
+    "deploy": "npx vercel deploy"
   },
   "dependencies": {
     "@webstudio-is/image": "0.238.0",
@@ -16,7 +17,15 @@
     "@webstudio-is/sdk-components-react-radix": "0.238.0",
     "react": "18.3.0-canary-14898b6a9-20240318",
     "react-dom": "18.3.0-canary-14898b6a9-20240318",
-    "vike": "^0.4.229"
+    "vike": "^0.4.229",
+    "@react-router/dev": "^7.5.3",
+    "@react-router/fs-routes": "^7.5.3",
+    "@webstudio-is/sdk-components-react-router": "0.238.0",
+    "isbot": "^5.1.25",
+    "react-router": "^7.5.3",
+    "vite": "^6.3.4",
+    "@react-router/node": "^7.5.3",
+    "@vercel/react-router": "^1.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.70",

@@ -4,7 +4,8 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Body as Body, Box as Box, Image as Image, Paragraph as Paragraph, Heading as Heading, Span as Span, Italic as Italic, HtmlEmbed as HtmlEmbed, Link as Link, RemixForm as RemixForm, Label as Label, Text as Text, Input as Input, Button as Button, RichTextLink as RichTextLink } from "@webstudio-is/sdk-components-react";
+      import { Body as Body, Link as Link, RemixForm as RemixForm, RichTextLink as RichTextLink, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
+import { Box as Box, Image as Image, Paragraph as Paragraph, Heading as Heading, Span as Span, Italic as Italic, HtmlEmbed as HtmlEmbed, Label as Label, Text as Text, Input as Input, Button as Button } from "@webstudio-is/sdk-components-react";
 import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
 
 
@@ -682,7 +683,7 @@ className={`w-link crlvzh9 c108d0jy c1hbihsy c11ucqog c1nymgjn c13opkia cxhd827 
 </Box>
 </Box>
 </Box>
-<a
+<Link_1
 href={"https://webstudio.is/?via=badge"}
 target={"_blank"}
 className={`w-element c1tsj3cd cvn9a9v c1k6tv6g cmtnauy c68yfzg c1rgix91 c1ocm0yc cmi2m6y c14rk1eg c17emy4u cocldte cb9o9cp c1t331jd c11s6few c1alb1h4 c8v2rrg c2hlyum ca4qbqh c108d0jy c1ur19d0 cck2jj2 c1c4tn3t ${"hide-me"}`}>
@@ -693,7 +694,7 @@ className={`w-html-embed c1tsj3cd c1r64200 c13p42de cwpoj5l`} />
 className={`w-element`}>
 {"Built with Webstudio"}
 </div>
-</a>
+</Link_1>
 </Body>
 }
 
